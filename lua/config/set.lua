@@ -27,3 +27,5 @@ vim.opt.termguicolors = true    -- Enable true color support
 
 vim.opt.clipboard = 'unnamed'   -- Automatically use the system clipboard for copy and paste (yy, dd, etc)
 
+vim.api.nvim_create_user_command('PythonOutput', 'edit! ~/.python_output.txt', {})  -- Create custom command :PythonOutput to open the hidden file ~/.python_output.txt in the home directory with the last console output
+
