@@ -26,5 +26,5 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('i', 'jk', '<Esc>:w<CR>')
 vim.keymap.set('n', '<S-U>', '<C-R>')
-vim.keymap.set('n', '<leader>r', ':w<CR>:!python % | tee ~/.python_output.txt<CR>', { silent = false })
+vim.keymap.set('n', '<leader>r', ':w<CR>:!bash -c "python % 2>&1 | tee ~/.python_output.txt"<CR>', { silent = false })
 
