@@ -1,8 +1,12 @@
 return {
     "neovim/nvim-lspconfig",
+    commit = "53a3c6444ec5006b567071614c83edc8ad651f6d",  -- Old working commit
     dependencies = {
         "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
+        {
+            "williamboman/mason-lspconfig.nvim",
+            commit = "37a336b653f8594df75c827ed589f1c91d91ff6c",  -- Old working commit
+        },
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
